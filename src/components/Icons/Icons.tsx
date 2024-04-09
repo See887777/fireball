@@ -51,8 +51,11 @@ import fakeGalleryCard from 'assets/images/navigation/fakegallery.jpg';
 import glossaryCard from 'assets/images/navigation/glossary.jpg';
 import guildsCard from 'assets/images/navigation/guilds.jpg';
 import lendCard from 'assets/images/navigation/lend.jpg';
+import lsCard from 'assets/images/navigation/lootsurvivor.jpg';
 import mapCard from 'assets/images/navigation/map.jpg';
 import marketCard from 'assets/images/navigation/market.jpg';
+import pnCard from 'assets/images/navigation/piratenations.jpg';
+import primodiumCard from 'assets/images/navigation/primodium.jpg';
 import rafflesCard from 'assets/images/navigation/raffles.jpg';
 import h1OpenedPortal from 'assets/images/portals/h1-opened.svg';
 // portals
@@ -374,6 +377,18 @@ export const MarketCardIcon = ({ width, height }: IconProps) => {
 
 export const RafflesCardIcon = ({ width, height }: IconProps) => {
   return <img width={width} height={height} src={rafflesCard} alt='raffles' />;
+};
+
+export const PrimodiumCardIcon = ({ width, height }: IconProps) => {
+  return <img width={width} height={height} src={primodiumCard} alt='primodium' />;
+};
+
+export const PirateNationsIcon = ({ width, height }: IconProps) => {
+  return <img width={width} height={height} src={pnCard} alt='pirate nations' />;
+};
+
+export const LootSurvivorIcon = ({ width, height }: IconProps) => {
+  return <img width={width} height={height} src={lsCard} alt='loot survivor' />;
 };
 
 // forge icons

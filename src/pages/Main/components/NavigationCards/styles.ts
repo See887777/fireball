@@ -47,6 +47,13 @@ export const styles = makeStyles((theme) =>
       },
       '&:hover $navCardDescr': {
         transform: 'none'
+      },
+      '&.disabled': {
+        pointerEvents: 'none',
+        '& $navCardImage': {
+          filter: 'grayscale(100)',
+          pointerEvents: 'none'
+        }
       }
     },
     navCardName: {
@@ -67,6 +74,20 @@ export const styles = makeStyles((theme) =>
     navCardImage: {
       position: 'relative',
       overflow: 'hidden'
+    },
+    soon: {
+      position: 'absolute',
+      bottom: 0,
+      right: 0,
+      left: 0,
+      padding: 8,
+      '& span': {
+        fontWeight: 500,
+        color: theme.palette.primary.main,
+        background: alpha('#000', 0.5),
+        padding: '4px 6px',
+        borderRadius: 2
+      }
     },
     navCardDescr: {
       position: 'absolute',
